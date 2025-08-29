@@ -1,0 +1,89 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Admin Dashboard Styling */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #333;
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Payment Status Dropdown */
+select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Forms */
+form {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Admin Panel Buttons */
+.update-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: #d35400;
+}

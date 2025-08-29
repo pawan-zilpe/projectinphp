@@ -1,0 +1,85 @@
+CREATE DATABASE clothing_store;
+USE clothing_store;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+
+
+
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    fabric VARCHAR(100) NOT NULL,
+    color VARCHAR(50) NOT NULL,
+    print_design VARCHAR(255) DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+ALTER TABLE orders ADD COLUMN print_image VARCHAR(255) NULL;
+
+
+print.php
+
+
+
+ALTER TABLE orders ADD COLUMN payment_status ENUM('pending', 'paid') DEFAULT 'pending';
+
+
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    price DECIMAL(10,2) NOT NULL
+);
+
+
+INSERT INTO products (name, image, price) VALUES
+('Classic White T-Shirt', 'images/white_tshirt.jpg', 499),
+('Black Cotton T-Shirt', 'images/black_tshirt.jpg', 599),
+('Printed Graphic Tee', 'images/graphic_tee.jpg', 699);
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE payments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    account_no VARCHAR(20) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
