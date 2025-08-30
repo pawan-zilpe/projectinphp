@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Courses - MBK360</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="MBK360 Logo" class="logo-img" style="display: block; margin: 40px; max-width: auto; width: 150px;">
+                </div>
+                <div class="tagline">
+                    Empowering Businesses with Cutting-Edge IT Solutions & Skilled Professionals
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="courses.html" class="active"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="hiring.html"><i class="fas fa-users"></i> Hiring</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                
+                <li class="sidebar-divider"></li>
+                
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li>
+                    <div class="dark-mode-toggle">
+                        <div class="dark-mode-label">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><a href="login.html" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Overlay for mobile sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        
+        <!-- Courses Page Content -->
+        <div class="page">
+            <div class="page-header">
+                <h2>Master In-Demand IT Skills with Industry Experts</h2>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-header">
+                    <h3 class="course-title">Programming & Development</h3>
+                    <div class="course-duration">Duration: 12 Weeks</div>
+                </div>
+                
+                <div class="course-features">
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Live & Recorded Sessions</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Hands-On Projects</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certification & Job Support</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Industry Expert Instructors</span>
+                    </div>
+                </div>
+                
+                <h4>Course Tracks:</h4>
+                <ul>
+                    <li><strong>Full Stack Development (MERN)</strong>: MongoDB, Express, React, Node.js</li>
+                    <li><strong>Full Stack Development (MEAN)</strong>: MongoDB, Express, Angular, Node.js</li>
+                    <li><strong>Python & Data Science</strong>: Python programming, Data analysis, Machine Learning</li>
+                    <li><strong>PHP/Laravel Development</strong>: PHP fundamentals, Laravel framework, RESTful APIs</li>
+                </ul>
+                
+                <div class="enrollment-cta">
+                    <button class="enrollment-btn">Enroll Now – Limited Seats Available!</button>
+                </div>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-header">
+                    <h3 class="course-title">Cloud Computing & DevOps</h3>
+                    <div class="course-duration">Duration: 10 Weeks</div>
+                </div>
+                
+                <div class="course-features">
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Live & Recorded Sessions</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Hands-On Projects</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certification & Job Support</span>
+                    </div>
+                    <div class="course-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Industry Expert Instructors</span>
+                    </div>
+                </div>
+                
+                <h4>Course Tracks:</h4>
+                <ul>
+                    <li><strong>AWS Solutions Architect</strong>: EC2, S3, RDS, VPC, IAM</li>
+                    <li><strong>Azure Administrator</strong>: Virtual Machines, Storage, Networking, Security</li>
+                    <li><strong>Google Cloud Professional</strong>: Compute Engine, Cloud Storage, Kubernetes</li>
+                    <li><strong>DevOps Engineering</strong>: CI/CD, Docker, Kubernetes, Infrastructure as Code</li>
+                </ul>
+                
+                <div class="enrollment-cta">
+                    <button class="enrollment-btn">Enroll Now – Limited Seats Available!</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>MBK360</h3>
+                    <p>Empowering businesses with cutting-edge IT solutions and skilled professionals since 2010.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="hiring.html">Hiring</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> "MBK360", 1ST FLOOR, NEAR RELIANCE SMART, KORADI, NAGPUR-441111</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 74982 83110</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 70830 44686</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 93245 65809</li>
+                        <li><i class="fas fa-envelope"></i> hr@mbk360.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 MBK360 Technologies. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MBK360 - IT Solutions, Courses & Recruitment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="MBK360 Logo" class="logo-img">
+                </div>
+                <div class="tagline">
+                    Empowering Businesses with Cutting-Edge IT Solutions & Skilled Professionals
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="hiring.html"><i class="fas fa-users"></i> Hiring</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                
+                <li class="sidebar-divider"></li>
+                
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li>
+                    <div class="dark-mode-toggle">
+                        <div class="dark-mode-label">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><a href="login.html" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Overlay for mobile sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        
+        <!-- Home Page Content -->
+        <div class="page">
+            <section class="hero">
+                <h1>Innovate, Learn, and Grow with MBK360</h1>
+                <p>Providing world-class IT services, industry-leading courses, and connecting top talent with businesses.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="cta-btn">Explore Our Services</a>
+                    <a href="courses.html" class="cta-btn">Browse Courses</a>
+                    <a href="hiring.html" class="cta-btn">Hire Talent / Get Hired</a>
+                </div>
+            </section>
+            
+            <section class="features-section">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Expert IT Solutions</h3>
+                    <p>Custom software development, cloud services, cybersecurity, and more. Tailored solutions for your business needs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Industry-Ready Courses</h3>
+                    <p>Learn from industry experts and get certified. Hands-on training that prepares you for real-world challenges.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Talent Recruitment</h3>
+                    <p>Hire skilled professionals or find your dream job. We connect top talent with leading companies.</p>
+                </div>
+            </section>
+            
+            <section class="why-choose-us">
+                <div class="section-title">
+                    <h2>Why Choose Us?</h2>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Certified Professionals</h4>
+                            <p>Our team consists of certified experts in their respective fields</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Hands-On Training</h4>
+                            <p>Practical learning approach with real-world projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock assistance for all our services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>100% Job Placement</h4>
+                            <p>Comprehensive assistance in securing employment</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="testimonials-section">
+                <div class="section-title">
+                    <h2>What Our Clients & Students Say</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-content">MBK360 transformed our business operations with their custom software solution. Their team is professional, responsive, and truly understands business needs.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Rajesh Sharma</h4>
+                                <p>CTO, TechInnovate Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-content">The Full Stack Development course changed my career. The hands-on projects and industry-relevant curriculum helped me land a job before I even completed the course!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Priya Patel</h4>
+                                <p>Software Developer, Infosys</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-content">We found three exceptional developers through MBK360's hiring portal. Their screening process ensures we only interview top-quality candidates.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Vikram Mehta</h4>
+                                <p>HR Director, GlobalTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>MBK360</h3>
+                    <p>Empowering businesses with cutting-edge IT solutions and skilled professionals since 2010.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="hiring.html">Hiring</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> "MBK360", 1ST FLOOR, NEAR RELIANCE SMART, KORADI, NAGPUR-441111</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 74982 83110</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 70830 44686</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 93245 65809</li>
+                        <li><i class="fas fa-envelope"></i> hr@mbk360.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 MBK360 Technologies. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

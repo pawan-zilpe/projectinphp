@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hiring - MBK360</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="MBK360 Logo" class="logo-img" style="display: block; margin: 40px; max-width: auto; width: 150px;">
+                </div>
+                <div class="tagline">
+                    Empowering Businesses with Cutting-Edge IT Solutions & Skilled Professionals
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="hiring.html" class="active"><i class="fas fa-users"></i> Hiring</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                
+                <li class="sidebar-divider"></li>
+                
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li>
+                    <div class="dark-mode-toggle">
+                        <div class="dark-mode-label">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><a href="login.html" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Overlay for mobile sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        
+        <!-- Hiring Page Content -->
+        <div class="page">
+            <div class="page-header">
+                <h2>Connecting Top IT Talent with Leading Companies</h2>
+            </div>
+            
+            <div class="hiring-portal">
+                <div class="portal-section">
+                    <div class="portal-header">
+                        <h3>For Job Seekers</h3>
+                    </div>
+                    
+                    <div class="portal-content">
+                        <ul>
+                            <li>Browse hundreds of IT job listings</li>
+                            <li>Filter by role, experience, and location</li>
+                            <li>Upload your resume to our talent database</li>
+                            <li>Get career guidance and interview preparation</li>
+                            <li>Receive personalized job recommendations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="portal-cta">
+                        <a href="#" class="cta-btn">Upload Your Resume</a>
+                    </div>
+                </div>
+                
+                <div class="portal-section">
+                    <div class="portal-header">
+                        <h3>For Employers</h3>
+                    </div>
+                    
+                    <div class="portal-content">
+                        <ul>
+                            <li>Post job openings and reach qualified candidates</li>
+                            <li>Access our database of skilled IT professionals</li>
+                            <li>Customized recruitment solutions</li>
+                            <li>Technical screening and candidate evaluation</li>
+                            <li>Industry-specific talent sourcing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="portal-cta">
+                        <a href="#" class="cta-btn">Post a Job</a>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="testimonials-section">
+                <div class="section-title">
+                    <h2>Success Stories</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-content">I found my dream job as a DevOps Engineer through MBK360. Their career guidance helped me prepare for technical interviews and negotiate a great package.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Anil Kumar</h4>
+                                <p>DevOps Engineer, TechSolutions Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-content">MBK360 helped us build an exceptional development team. The candidates they provided were thoroughly vetted and matched our technical requirements perfectly.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Neha Singh</h4>
+                                <p>CTO, Startup Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>MBK360</h3>
+                    <p>Empowering businesses with cutting-edge IT solutions and skilled professionals since 2010.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="hiring.html">Hiring</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> "MBK360", 1ST FLOOR, NEAR RELIANCE SMART, KORADI, NAGPUR-441111</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 74982 83110</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 70830 44686</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 93245 65809</li>
+                        <li><i class="fas fa-envelope"></i> hr@mbk360.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 MBK360 Technologies. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

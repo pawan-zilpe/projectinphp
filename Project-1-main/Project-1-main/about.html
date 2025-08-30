@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About Us - MBK360</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="MBK360 Logo" class="logo-img" style="display: block; margin: 40px; max-width: auto; width: 150px;">
+                </div>
+                <div class="tagline">
+                    Empowering Businesses with Cutting-Edge IT Solutions & Skilled Professionals
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="hiring.html"><i class="fas fa-users"></i> Hiring</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                
+                <li class="sidebar-divider"></li>
+                
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li>
+                    <div class="dark-mode-toggle">
+                        <div class="dark-mode-label">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><a href="login.html" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Overlay for mobile sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        
+        <!-- About Page Content -->
+        <div class="page">
+            <div class="page-header">
+                <h2>Driving Innovation in IT Solutions & Education</h2>
+            </div>
+            
+            <div class="about-story">
+                <h3>Our Story</h3>
+                <p>Founded in 2010, MBK360 has been at the forefront of IT innovation for over a decade. What started as a small team of passionate technologists has grown into a leading provider of IT solutions and education.</p>
+                <p>Our mission is to empower businesses with cutting-edge technology solutions and equip individuals with the skills needed to thrive in the digital economy. We believe in the transformative power of technology to solve complex problems and create opportunities.</p>
+                <p>At MBK360, we combine technical expertise with a deep understanding of business challenges to deliver solutions that drive growth and innovation. Our commitment to excellence has earned us the trust of clients across various industries.</p>
+            </div>
+            
+            <div class="team-section">
+                <div class="section-title">
+                    <h2>Our Leadership Team</h2>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Manoj Bhatia</h4>
+                            <p>Founder & CEO</p>
+                            <p>20+ years in IT leadership and enterprise solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Kavita Sharma</h4>
+                            <p>Director of Education</p>
+                            <p>Former head of technology at leading universities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Rajiv Mehta</h4>
+                            <p>CTO</p>
+                            <p>Cloud architecture and cybersecurity expert</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Priya Desai</h4>
+                            <p>Head of Recruitment</p>
+                            <p>Specialized in IT talent acquisition and development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title" style="margin: 3rem 0;">
+                <h2>Our Achievements</h2>
+            </div>
+            
+            <div class="achievements">
+                <div class="achievement-item">
+                    <div class="achievement-number">5,000+</div>
+                    <div class="achievement-text">Students Trained</div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-number">500+</div>
+                    <div class="achievement-text">Clients Served</div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-number">95%</div>
+                    <div class="achievement-text">Placement Rate</div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-number">12</div>
+                    <div class="achievement-text">Industry Awards</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>MBK360</h3>
+                    <p>Empowering businesses with cutting-edge IT solutions and skilled professionals since 2010.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="hiring.html">Hiring</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> "MBK360", 1ST FLOOR, NEAR RELIANCE SMART, KORADI, NAGPUR-441111</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 74982 83110</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 70830 44686</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 93245 65809</li>
+                        <li><i class="fas fa-envelope"></i> hr@mbk360.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 MBK360 Technologies. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
